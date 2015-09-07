@@ -55,3 +55,14 @@ docs/_build/
 
 # PyBuilder
 target/
+
+old.py
+settins.py
+setup.py
+test.py
+MANIFEST
+/pack/*
+
+*.mp3
+icon.png
+icon.bmp
