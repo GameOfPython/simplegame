@@ -229,8 +229,9 @@ class FPS(GameObject):
 	def draw(self, window ):
 		window.draw(self.text)
 
+
 class Game(object):
-	"""docstring for Game"""
+	"""..."""
 	def __init__(self):
 		# Load Assets
 		self.load_content()
@@ -256,12 +257,17 @@ class Game(object):
 		# attr: font, text, pos, color=Color.GREEN
 		self.fps_pos = Vector2(15, 15)
 		self.fps_text_content = '...'
-		self.fps_text = Text(self.fps_text_content, self.fps_font, 14)
-		self.fps = FPS(self.fps_text, self.fps_pos)
+		self.fps_text = Text(self.fps_text_content,
+							 self.fps_font, 14)
+
+		self.fps = FPS(self.fps_text,
+		               self.fps_pos)
 
 		# PLAYER
 		self.player_spt = Sprite(self.player_texture)
-		self.player = Player(self.window, self.player_spt, self.player_texture, 0, 0)
+		self.player = Player(self.window,
+							 self.player_spt,
+							 self.player_texture, 0, 0)
 
 		self.bg = Sprite(self.bg)
 
