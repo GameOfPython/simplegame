@@ -43,7 +43,6 @@ asset = {
 
 # Print all assets
 for key, value in asset.items():
-    # REGEX
     # -/+ aling left or right
     # 20  space
     # s   formt string
@@ -72,16 +71,9 @@ def load_animations(path):
         alert("Load Animations", e)
 
 
-class Animation2:
-    def __init__(self):
-        self.texture = None
-        self.frames = []
-
-    def add_frame(self, rect):
-        self.frames.append(rect)
-
-
-class Animation:
+class Animation(object):
+    """
+    """
     def __init__(self, name, animation, texture):
         try:
             self.texture = texture
